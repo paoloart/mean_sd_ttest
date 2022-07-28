@@ -21,10 +21,6 @@ plt.hist(dataset.iloc[:,1], bins=20, color='blue', alpha=0.5, label='colonna 2')
 plt.legend()
 
 
-
-
-
-
 t_stat, p_value = stats.ttest_ind(dataset.iloc[:,0], dataset.iloc[:,1]) # calcola il t-statistico e il p-value
 
 #printa i risultati a terminale
@@ -32,4 +28,6 @@ print(std1, std2)
 print(mean1, mean2)
 print(t_stat, p_value)
 #print(t_stat, p_value)
+
+plt.show()
 
